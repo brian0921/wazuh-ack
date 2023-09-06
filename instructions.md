@@ -6,10 +6,10 @@ This guide describes the necessary steps to deploy Wazuh on Kubernetes.
 
 - Kubernetes cluster already deployed.
 - Kubernetes can run on a wide range of Cloud providers and bare-metal environments, this repository focuses on [Alibaba Cloud](https://www.alibabacloud.com/). It was tested using [Alibaba Cloud ACK](https://www.alibabacloud.com/help/en/ack/). You should be able to:
-    - Create Persistent Volumes on top of AWS EBS when using a volumeClaimTemplates
+    - Create Persistent Volumes on top of Alibaba EBS when using a volumeClaimTemplates
     - Create a record set in AWS Route 53 from a Kubernetes LoadBalancer.
 - Having at least two Kubernetes nodes in order to meet the *podAntiAffinity* policy.
-- For Kubernetes version 1.23 or higher, the assignment of an IAM Role is necessary for the CSI driver to function correctly. Within the AWS documentation you can find the instructions for the assignment: https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html
+- For Kubernetes version 1.23 or higher, the assignment of an IAM Role is necessary for the CSI driver to function correctly. Within the Alibaba Cloud documentation you can find the instructions for the assignment: https://www.alibabacloud.com/help/en/ack/ack-managed-and-ack-dedicated/user-guide/csi-overview-1
 - The installation of the CSI driver is necessary for new and old deployments, since it is a Kubernetes feature.
 
 

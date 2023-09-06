@@ -5,7 +5,7 @@ This guide describes the necessary steps to deploy Wazuh on Kubernetes.
 ## Pre-requisites
 
 - Kubernetes cluster already deployed.
-- Kubernetes can run on a wide range of Cloud providers and bare-metal environments, this repository focuses on [AliCloud](https://www.alibabacloud.com/). It was tested using [AliCloud ACK](https://www.alibabacloud.com/help/en/ack/). You should be able to:
+- Kubernetes can run on a wide range of Cloud providers and bare-metal environments, this repository focuses on [Alibaba Cloud](https://www.alibabacloud.com/). It was tested using [Alibaba Cloud ACK](https://www.alibabacloud.com/help/en/ack/). You should be able to:
     - Create Persistent Volumes on top of AWS EBS when using a volumeClaimTemplates
     - Create a record set in AWS Route 53 from a Kubernetes LoadBalancer.
 - Having at least two Kubernetes nodes in order to meet the *podAntiAffinity* policy.
